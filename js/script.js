@@ -2,6 +2,8 @@
 // questions
 // 1
 const getRemainder = (a, b) => a % b;
+
+console.log(getRemainder(1043, 77));
 // 2
 
 const outElem = document.querySelector('.out-elem');
@@ -25,7 +27,7 @@ const displayData = (array, outElem) => {
   spinner.classList.add('lds-dual-ring');
   document.body.appendChild(spinner);
   /*   setTimeout is only used to show the spinner for longer time
-    otherwise i would have to set the internet speed down. I wouldn't use setTimeout if it
+    otherwise i would have to set the internet speed down. I wouldn't use setTimeout if this
     wasn't a school project
 */
   setTimeout(() => {
