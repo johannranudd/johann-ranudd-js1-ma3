@@ -1,10 +1,9 @@
 /* https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=8191a470081345a5b346eaaf44d8a30f */
-// questions
-// 1
+// question 1
 const getRemainder = (a, b) => a % b;
 
 console.log(getRemainder(1043, 77));
-// 2
+// question 2
 
 const outElem = document.querySelector('.out-elem');
 const url =
@@ -16,7 +15,12 @@ function getData(url) {
     .then((data) => {
       displayData(data.results, outElem);
     })
-    .catch((error) => console.error(error));
+    .catch((error) =>
+      console.error(
+        error,
+        'an error has occured, please check: getData() function'
+      )
+    );
 }
 
 getData(url);
@@ -44,7 +48,7 @@ const displayData = (array, outElem) => {
     } catch (e) {
       console.error(
         e,
-        'something whent wrong, please check: displayData() function'
+        'an error has occured, please check: displayData() function'
       );
     } finally {
       spinner.remove();
