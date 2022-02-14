@@ -1,8 +1,5 @@
 /* https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=8191a470081345a5b346eaaf44d8a30f */
-// question 1
-const getRemainder = (a, b) => a % b;
 
-console.log(getRemainder(1043, 77));
 // question 2
 
 const outElem = document.querySelector('.out-elem');
